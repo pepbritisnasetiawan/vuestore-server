@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 const PORT = process.env.PORT || 8000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.use('/img', express.static(path.join(__dirname, './public/img')));
 
 const db = require('./app/models');
 db.mongoose
@@ -25,8 +28,8 @@ app.get('/', (req, res) => {
   });
 });
 
-require('./app/routes/product.route')(app)
-require('./app/routes/order.route')(app)
+require('./app/routes/product.route')(app);
+require('./app/routes/order.route')(app);
 
 app.listen(PORT, () => {
   console.log(`server is running on http://localhost:${PORT}`);
