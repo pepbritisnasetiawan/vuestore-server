@@ -1,0 +1,30 @@
+{
+  "name": "vuestore-server",
+  "version": "1.0.0",
+  "description": "vuestore server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pepbritisnasetiawan/vuestore-server.git"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "Febrian Tisna Setiawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pepbritisnasetiawan/vuestore-server/issues"
+  },
+  "homepage": "https://github.com/pepbritisnasetiawan/vuestore-server#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.7.1"
+  }
+}
